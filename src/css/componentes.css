@@ -1,0 +1,38 @@
+:root {
+    --branco: #fff;
+    --azul: #145d85;
+    --preto: #000000;
+    --cinza: #4A4A4A;
+    --cinza2: #747171;
+    --verde: #0dc50d;
+    --laranja: #d18034;
+    --primary: #ec994b;
+    --white: #ffffff;
+    --bg: #f5f5f5;
+}
+
+@font-face {
+    font-family: "01";
+    src: url(./Kablammo/Kablammo-Regular-VariableFont_MORF.ttf);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Kablammo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+/* Voltar suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Cor do corpo */
+body {
+    background-color: #4A4A4A;
+}

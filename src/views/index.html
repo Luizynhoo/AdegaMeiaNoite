@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/x-icon" href="../public/img/iconfinder.png" />
+    <title>Adega Meia Noite</title>
+</head>
+
+<body>
+    <!-- loader -->
+    <div class="preloader" id="preloader">
+        <div class="loader" id="loader"></div>
+    </div>
+
+    <!-- formulario +18 -->
+    <div class="overlay" id="idade">
+        <div class="form-container">
+            <h2>Você tem mais de 18 anos?</h2>
+            <form id="idadeForm">
+                <label>
+                    <input type="radio" name="confirmar_idade" value="sim" required> Sim
+                </label>
+                <label>
+                    <input type="radio" name="confirmar_idade" value="nao"> Não
+                </label>
+                <button type="submit">Confirmar</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <header id="header">
+            <div class="container">
+                <div class="flex">
+                    <!-- logo -->
+                    <nav class="logo">
+                        <a class="navbar-brand" href="#">
+                            <img src="../public/img/adegalogo.png" alt="logo">
+                        </a>
+                    </nav>
+                    <nav id="main">
+                        <ul>
+                            <li class="nav-item"><a href="#">Home</a></li>
+                            <li class="nav-item"><a href="#bebidas">Bebidas</li>
+                            <li class="nav-item"><a href="#novo2">Sobre</a></li>
+                            <li class="nav-item"><a href="#local">Local</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- flex -->
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()">
+                        <img class="icon" src="../public/img/menu_white_36dp.svg" />
+                    </button>
+                </div>
+                <!-- mobile-menu-icon -->
+            </div>
+            <!--container-->
+
+            <!-- Menu mobile -->
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="#bebidas" class="nav-link">BEBIDAS</a></li>
+                    <li class="nav-item"><a href="#novo2" class="nav-link">SOBRE</a></li>
+                    <li class="nav-item"><a href="#local" class="nav-link">LOCAL</a></li>
+
+                </ul>
+            </div>
+            <!-- mobile-menu -->
+        </header>
+
+        <!-- banner -->
+        <section class="banner" id="home">
+            <div class="box-container">
+                <h3>
+                    Cada garrafa conta uma história, cada gole é uma celebração
+                </h3>
+            </div>
+        </section>
+
+        <!-- bebidas-->
+        <div class="bebidas" id="bebidas">
+            <section id="tranding">
+                <div class="container">
+                    <h1 class="text-center section-heading">Melhores Bebidas</h1>
+                </div>
+                <div class="container">
+                    <div class="swiper tranding-slider">
+                        <div class="swiper-wrapper">
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                    <img src="../public/img/jk.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                    <div class="tranding-slide-content-bottom">
+                                        <h2 class="food-name">
+                                            Jack Daniel's
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                    <img src="../public/img/jk-maca.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                    <div class="tranding-slide-content-bottom">
+                                        <h2 class="food-name">
+                                            Jack Maçã Verde
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                    <img src="../public/img/gin.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                    <div class="tranding-slide-content-bottom">
+                                        <h2 class="food-name">
+                                            Gin Eternity
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                    <img src="../public/img/ComboJK.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                    <div class="tranding-slide-content-bottom">
+                                        <h2 class="food-name">
+                                            Combo Jack + Red Bull
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                    <img src="../public/img/Smirnorff.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                    <div class="tranding-slide-content-bottom">
+                                        <h2 class="food-name">
+                                            Smirnoff
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                    <img src="../public/img/Licor.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                    <div class="tranding-slide-content-bottom">
+                                        <h2 class="food-name">
+                                            Licor 43
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                    <img src="../public/img/ComboGin.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                    <div class="tranding-slide-content-bottom">
+                                        <h2 class="food-name">
+                                            Combo Eternity + Bally
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide-end -->
+                        </div>
+
+                        <div class="tranding-slider-control">
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <!-- SOBRE -->
+        <div class="sobre" id="novo2">
+            <div class="sobre-box">
+                <div class="sobre-image">
+                    <img src="../public/img/iconfinder.png">
+                </div>
+                <div class="sobre-body">
+                    <h1 class="titulo">Sobre nós</h1>
+                    <p> Acreditamos que cada garrafa conta uma história, e nossa missão é ajudar nossos clientes a
+                        encontrar
+                        a bebida perfeita para cada ocasião.
+                        Venha nos visitar e descubra uma seleção feita para quem valoriza qualidade e autenticidade,
+                        num ambiente de alegria. Na Adega Meia Noite, drink é um brinde ao luar!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer / rodapé -->
+        <!--Rodapé-->
+
+        <footer id="local">
+
+            <div class="container">
+
+                <a href="#" id="topo">
+                    <img src="../public/img/topo.png" alt="Ir para o topo do site">
+                </a>
+            </div>
+
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+
+            <address>
+                <div class="container flex6">
+
+                    <div class="google-maps">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.0904014205785!2d-46.55227488636451!3d-23.52925073560415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e577f8f6697%3A0xe72db4ddf83f79d7!2sRua%20Guaia%C3%BAna%2C%2057%20-%20Guaiauna%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003631-000!5e0!3m2!1spt-BR!2sbr!4v1731019920265!5m2!1spt-BR!2sbr"
+                            width="400" height="300" style="border-radius: 12px;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </address>
+
+            <ul class="social_icon">
+                <li class="item">
+                    <a id="insta" href="https://www.instagram.com/adega_meia.noite/" target="_blank">
+                        <i class="fa-brands fa-instagram icon"></i>
+                    </a>
+                </li>
+
+                <li class="item">
+                    <a id="X" href="https://wa.me/5511954823653 " target="_blank">
+                        <i class="fa-brands fa-whatsapp icon"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="menu">
+                <li><a href="#bebidas">Bebidas</a></li>
+                <li><a href="#novo2">Sobre</a></li>
+            </ul>
+
+            <p> Copyright &copy; Adega Meia Noite</p>
+        </footer>
+
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
