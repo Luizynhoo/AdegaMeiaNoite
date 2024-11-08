@@ -202,7 +202,7 @@ header {
 /* banner */
 .banner {
     height: 100vh;
-    background-image: url(../public/img/capa02.jpg);
+    background-image: url(../img/capa02.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -589,7 +589,7 @@ footer .wave {
     left: 0;
     width: 100%;
     height: 100px;
-    background: url(../public/img/Nuvem.png);
+    background: url(../img/Nuvem.png);
     background-size: 1000px 100px;
 }
 
