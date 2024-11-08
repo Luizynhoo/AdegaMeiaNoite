@@ -49,22 +49,17 @@ var TrandingSlider = new Swiper(".tranding-slider", {
 
 //+18
 document.getElementById("idadeForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Impede o envio do formulário e o redirecionamento da página
+  event.preventDefault();
 
-  // Obtém a resposta
   const idadeConfirmada = document.querySelector('input[name="confirmar_idade"]:checked');
 
-  if (idadeConfirmada) {
-      // Se o usuário confirmar que tem mais de 18 anos
-      if (idadeConfirmada.value === "sim") {
-          // Define o cookie para lembrar a confirmação de idade
-          document.cookie = "maior_de_18=sim; path=/; max-age=86000";  // Cookie válido por 24 hora
-
-          // Esconde a sobreposição e permite interação com o site
-          document.getElementById("idade").style.display = "none";
-      } else {
-          // Se o usuário não tem mais de 18 anos, mostra um alerta
-          alert("Você deve ter mais de 18 anos para acessar este site.");
-      }
+  if (idadeConfirmada && idadeConfirmada.value === "sim") {
+      // Define o cookie através da requisição ao PHP
+      fetch("definir_cookie.php")
+          .then(() => {
+              document.getElementById("idade").style.display = "none";
+          });
+  } else {
+      alert("Você deve ter mais de 18 anos para acessar este site.");
   }
 });

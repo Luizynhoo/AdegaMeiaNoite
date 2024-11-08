@@ -20,6 +20,7 @@
     </div>
 
     <!-- formulario +18 -->
+    <?php if (!$maiorDe18): ?>
     <div class="overlay" id="idade">
         <div class="form-container">
             <h2>Você tem mais de 18 anos?</h2>
@@ -34,6 +35,7 @@
             </form>
         </div>
     </div>
+    <?php endif; ?>
 
     <div id="main-content">
         <header id="header">
